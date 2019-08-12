@@ -1,0 +1,28 @@
+<form [formGroup]="formGroup">
+  <div>
+    <mat-form-field floatLabel="never">
+      <mat-label>姓名</mat-label>
+      <input matInput placeholder="請填寫真實姓名" formControlName="name">
+    </mat-form-field>
+  </div>
+  <div>
+    <mat-form-field floatLabel="never">
+      <mat-label>Email</mat-label>
+        <input matInput formControlName="email">
+    </mat-form-field>
+  </div>
+  <div class="row">
+    <mat-form-field floatLabel="always" appearance="fill">
+      <mat-label>地址</mat-label>
+      <app-address></app-address>
+    </mat-form-field>
+  </div>
+  <!--<div>-->
+    <!--<mat-form-field>-->
+      <!--<input matInput formControlName="postNumber">-->
+    <!--</mat-form-field>-->
+    <!--<mat-form-field>-->
+      <!--<input matInput formControlName="addressContent">-->
+    <!--</mat-form-field>-->
+  <!--</div>-->
+</form>

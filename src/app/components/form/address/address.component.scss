@@ -1,0 +1,15 @@
+.address-input-container {
+  display: flex;
+}
+
+.address-input-element {
+  border: none;
+  background: none;
+  padding: 0;
+  outline: none;
+  font: inherit;
+}
+
+.address-input__content {
+  flex-grow: 1;
+}

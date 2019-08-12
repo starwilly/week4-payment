@@ -1,0 +1,11 @@
+<div [formGroup]="parts" class="address-input-container">
+  <input type="text" class="address-input-element"
+         formControlName="postNo"
+         placeholder="郵遞區號"
+         size="5" style="width: 10rem" (input)="_handleInput()">
+  <span>&nbsp;&nbsp;</span>
+  <input type="text"
+         class="address-input-element address-input__content"
+         placeholder="例：新北市信義區復興路999段99號1巷8樓"
+         formControlName="addressContent" (input)="_handleInput()">
+</div>
